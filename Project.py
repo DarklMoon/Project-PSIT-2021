@@ -26,7 +26,6 @@ def main():
     while run:
         for event in pygame.event.get(): #ใช้ forloop ในการเช็คดูเหตุการณ์ต่างๆที่เกิดขึ้นภายในเกม
             if event.type == pygame.QUIT: # หากมีการกดปิดเกมให้สั่งปิด
-                run = False
+                sys.exit() #คำสั่งสำหรับกดปุ่มปิด แล้วทำให้เกมปิดได้
         draw_board()
     pygame.quit()
-
